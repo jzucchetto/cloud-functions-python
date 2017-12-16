@@ -249,7 +249,7 @@ gcloud beta functions deploy my-bucket-function --trigger-bucket \
 ### Pubsub
 
 ```sh
-py-cloud-fn my-topic-function bucket -p && cd cloudfn/target && \
+py-cloud-fn my-topic-function pubsub -p && cd cloudfn/target && \
 gcloud beta functions deploy my-topic-function --trigger-topic <topic> \
 --stage-bucket <bucket> && cd ../..
 ```
